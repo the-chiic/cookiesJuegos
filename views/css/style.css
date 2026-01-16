@@ -1,0 +1,115 @@
+/* RESET básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+main{
+    position: relative;
+}
+
+/* Buscador */
+#buscador {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/*MAIN centrado y con espacio*/
+main section{
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /*Espacio entre juegos */
+}
+
+/* Cada juego */
+main section div {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Efecto hover en la caja */
+main section div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+/* H1 dentro de cada juego */
+main section div h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* El enlace del juego */
+main section div h1 a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.2s;
+}
+
+/* Hover sobre el enlace */
+main section div h1 a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+main section div{
+    text-align: center;
+}
+
+aside{
+    position: absolute;
+    top: 35px;
+    left: 50px;
+
+    h3{
+
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+/* Botones */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+/* Hover botones */
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Enlaces dentro de botones */
+button a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
